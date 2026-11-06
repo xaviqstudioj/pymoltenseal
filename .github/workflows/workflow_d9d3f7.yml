@@ -1,0 +1,12 @@
+name: CI Build
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-stage:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare workspace
+        run: echo "complete"
